@@ -1,11 +1,11 @@
 import Lottie from 'lottie-react';
-import React, { useContext } from 'react';
+import React, { use } from 'react';
 import loginLottieJSON from '../../assets/lottie/login.json'
 import AuthContext from '../../context/AuthContext/AuthContext';
 import SocialLogin from '../shared/SocialLogin';
 
 const SignIn = () => {
-    const { singInUser } = useContext(AuthContext);
+    const { singInUser } = use(AuthContext);
 
     const handleSignIn = e => {
         e.preventDefault();
